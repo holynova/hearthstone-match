@@ -1,0 +1,15 @@
+@font-face{font-family:'Noto Serif SC';src:url('/assets/noto-serif-sc-bold.woff2') format('woff2');font-weight:700;font-display:swap}
+.matchmaker{width:100%;aspect-ratio:1436/1095;position:relative;container-type:inline-size;isolation:isolate;filter:drop-shadow(0 22px 28px #0009);flex-shrink:0}
+.match-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.frame-art{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none;user-select:none}
+.match-title,.match-tip,.match-button,.queue-time{position:absolute;z-index:2;font-family:'Noto Serif SC',Georgia,serif;font-weight:700}
+.match-title{top:3.5%;left:32%;width:36%;height:6.4%;display:flex;align-items:center;justify-content:center;font-size:clamp(9px,2.3cqw,36px);color:#352c21;text-shadow:0 1px #e8d9b27a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.match-tip{white-space:pre-line;top:76.4%;left:10%;width:80%;height:9.4%;display:flex;justify-content:center;align-items:center;text-align:center;color:#493b1b;font-size:clamp(6px,2.1cqw,30px);line-height:1.65;text-shadow:0 1px #e6d29840;overflow:hidden}
+.match-button{padding:0;white-space:nowrap;top:88.8%;left:44.2%;width:12%;height:9%;border:0;background:transparent;color:#dcc798;font-size:clamp(8px,1.65cqw,24px);text-shadow:0 2px 3px #000;cursor:pointer;transition:filter .2s,transform .12s;border-radius:26%;}
+.match-button:hover{color:#fff1c8;filter:drop-shadow(0 0 6px #ffc85788);transform:scale(1.04)}.match-button:active{transform:scale(.97)}.match-button:focus-visible{outline:2px solid #ffd481;outline-offset:-5px}
+.queue-time{right:8.7%;top:55.1%;width:17%;padding:1% 1%;font-size:clamp(6px,1.03cqw,16px);line-height:1.4;background:#171513db;box-shadow:inset 0 0 0 1px #a79a7160;color:#cbbca3;text-align:center}.queue-time span{display:block;color:#a39989}.queue-time strong{display:block;color:#e7decd}.queue-time[hidden]{display:none}
+.is-complete{animation:found .7s ease-out}@keyframes found{0%{filter:drop-shadow(0 0 28px #e4a83d88) brightness(1.18)}100%{filter:drop-shadow(0 22px 28px #0009)}}
+@media(prefers-reduced-motion:reduce){.is-complete{animation:none}.match-button{transition:none}}
+
+.match-effects{position:absolute;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+.match-title,.match-tip,.match-button,.queue-time{z-index:3}

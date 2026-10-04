@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "hearthstone-match",
+  "account_id": "ef7863c4de93e71c3496f940c8ab4865",
+  "compatibility_date": "2026-10-04",
+  "workers_dev": false,
+  "assets": {
+    "directory": "./dist/client"
+  },
+  "routes": [
+    {
+      "pattern": "hearthstone-match.xiaosang.cc/*",
+      "zone_name": "xiaosang.cc"
+    }
+  ]
+}
