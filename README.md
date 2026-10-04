@@ -8,7 +8,7 @@ English: A reusable React recreation of the classic Hearthstone matchmaking scre
 
 ## 在线体验 / Live Demo
 
-- [Cloudflare Demo](https://hearthstone-match.xiaosang.cc/)（待验证 / pending verification）
+- [Cloudflare Demo](https://hearthstone-match.xiaosang.cc/)
 - [GitHub Repo](https://github.com/holynova/hearthstone-match)
 
 <img src="./assets/qr.png" width="180" alt="扫码访问 Cloudflare 在线体验">
