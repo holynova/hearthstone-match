@@ -1,38 +1,40 @@
-# 炉石匹配实验室 / Hearthstone Match Lab
+# 炉石匹配实验室 · Hearthstone Match Lab
 
-中文：经典炉石传说匹配界面的 React 交互复刻。独立组件支持曲面滚筒、减速回弹、指针抖动、火花粒子及合成音效；实验面板可调整时序、名单、结果与混音，并导入导出配置。非官方界面模拟器，默认声音由 Web Audio 合成。
+可调参数的炉石匹配界面复刻，观察滚筒减速、指针抖动、粒子和合成音效。
 
-English: A reusable React recreation of the classic Hearthstone matchmaking screen, with a cylindrical spinner, deceleration and rebound, moving pointers, sparks, synthesized audio, and an adjustable experiment panel. Configure candidates, results, timing, visuals, and audio; import or export settings. An unofficial UI simulator.
+An adjustable React matchmaking recreation with spinner motion, sparks and synthesized audio.
 
-![Project screenshot](./assets/screenshot.png)
+[在线体验](https://hearthstone-match.xiaosang.cc/) · [源码](https://github.com/holynova/hearthstone-match)
 
-## 在线体验 / Live Demo
+![炉石匹配实验室 · Hearthstone Match Lab：真实页面截图](./assets/readme/screenshot.png)
 
-- [Cloudflare Demo](https://hearthstone-match.xiaosang.cc/)
-- [GitHub Repo](https://github.com/holynova/hearthstone-match)
+## 可以做什么
 
-<img src="./assets/qr.png" width="180" alt="扫码访问 Cloudflare 在线体验">
+- 调整名单、结果、时序、画面与混音。
+- 导入导出配置，并通过时间轴观察匹配动画。
 
-## 本地运行 / Run locally
+## 开始一次匹配
 
-Node.js 22.18+; React 19 + TypeScript + Vite.
+点击「开始匹配」，在右侧面板调整滚筒速度、回弹、粒子或名单；用暂停和时间轴逐帧观察。修改运动参数后重新开始匹配。
+
+## 本地运行
 
 ```bash
 npm ci
 npm run dev
-npm test
 npm run build
 ```
 
-## 发布 / Deploy
+组件与交互逻辑在 `src/`，已有验证可通过 `npm test` 与 `npm run test:sites` 运行。
+
+这是非官方界面复刻，不连接真实匹配服务；默认音效由Web Audio合成。
+
+<img src="./assets/readme/qr.png" width="144" alt="扫码打开https://hearthstone-match.xiaosang.cc/">
+
+## 发布
 
 ```bash
-npm run deploy:check
 npm run deploy
 ```
 
-Cloudflare Workers · `hearthstone-match.xiaosang.cc` · v0.1.0
-
-源码与部署配置在 main 维护，本地手动部署。Source and deployment configuration share main; deploy manually from the same commit.
-
-[组件 API / Component API](docs/component-api.md) · [参考来源 / References](references/sources.md)
+从 `main` 同一提交在本地手动发布到Cloudflare Workers。正式地址：[https://hearthstone-match.xiaosang.cc/](https://hearthstone-match.xiaosang.cc/)。
