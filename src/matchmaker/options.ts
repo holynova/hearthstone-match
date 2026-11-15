@@ -25,7 +25,7 @@ export function normalizeOptions(input: unknown): MatchOptions {
   if(key in x) { if(typeof x[key]!=='number'|| !Number.isFinite(x[key])) throw new Error(`${key} 必须是有限数值`); (out as unknown as Record<string,unknown>)[key]=Math.max(range![0],Math.min(range![1],x[key] as number)); }
  }
  out.seed=Math.round(out.seed);out.bounces=Math.round(out.bounces);
- for(const key of ['title','tip','result'] as const) if(key in x) {if(typeof x[key]!=='string') throw new Error(`${key} 必须是文字`);out[key]=(x[key] as string).slice(0,key==='tip'?160:40);}
+ for(const key of ['title','tip','result'] as const) if(key in x) {if(typeof x[key]!=='string') throw new Error(`${key} 必须是文字`);out[key]=(x[key] as string).slice(0,key==='tip'?80:20);}
  if('direction' in x) out.direction=x.direction===-1?-1:1;
  if('muted' in x) {if(typeof x.muted!=='boolean') throw new Error('muted 必须是布尔值'); out.muted=x.muted;}
  if('opponents' in x) {

@@ -3,6 +3,7 @@
 研究日期：2026-10-04。
 
 1. 暴雪官方本地化文章（2014-08-28）：https://hearthstone.blizzard.com/ru-ru/news/15019545
+   - 2026-11-14 核查：该链接已返回 404，About 弹窗中的链接已移除；本地截图 `blizzard-matchmaking.png` 仍保留。
    - 官方资源：https://bnetcmsus-a.akamaihd.net/cms/gallery/5YR9FVU42VM51407254433867.png
    - 本地 `blizzard-matchmaking.png`，1920×1200。已打开检查完整画面、文字透视、机械框体及黄色指针。文章本身讨论本地化，并非技术实现说明。
 2. 经典机械匹配动画录像（2016-02-28）：https://www.youtube.com/watch?v=deTunPCWtD0
