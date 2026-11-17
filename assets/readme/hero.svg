@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1200" height="360" viewBox="0 0 1200 360"
+     role="img" aria-labelledby="title desc">
+  <title id="title">炉石匹配实验室 — Hearthstone Match Lab</title>
+  <desc id="desc">深色酒馆底、金色边框：炉石匹配实验室；右侧是微缩匹配滚筒，金色指针夹着红色名牌，中央是旗鼓相当的对手。</desc>
+
+  <rect width="1200" height="360" rx="26" fill="#171310"/>
+  <rect x="0" y="0" width="1200" height="360" rx="26" fill="none" stroke="#3a2f26" stroke-width="2"/>
+
+  <g id="title-block" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="56" y="62" font-size="19" letter-spacing="3" fill="#b8a88a">炉石匹配界面复刻 · HEARTHSTONE MATCHMAKING</text>
+    <text x="56" y="128" font-size="62" font-weight="700" fill="#e8c96a">炉石匹配实验室</text>
+    <text x="56" y="168" font-size="23" fill="#e8e2d6">HEARTHSTONE MATCH LAB — 滚筒、指针、粒子、音效，全可调</text>
+    <text x="56" y="204" font-size="19" fill="#a89a80">经典匹配动画的 React 复刻，带时间轴逐帧观察。</text>
+    <g id="chips" font-size="18" fill="#e8e2d6" text-anchor="middle">
+      <g><rect x="56" y="238" width="150" height="36" rx="18" fill="#241d17" stroke="#4a3d2c" stroke-width="1.5"/><text x="131" y="262">12 个候选对手</text></g>
+      <g><rect x="218" y="238" width="126" height="36" rx="18" fill="#241d17" stroke="#4a3d2c" stroke-width="1.5"/><text x="281" y="262">3 个预设</text></g>
+      <g><rect x="356" y="238" width="174" height="36" rx="18" fill="#241d17" stroke="#4a3d2c" stroke-width="1.5"/><text x="443" y="262">30+ 可调参数</text></g>
+      <g><rect x="542" y="238" width="198" height="36" rx="18" fill="#241d17" stroke="#4a3d2c" stroke-width="1.5"/><text x="641" y="262">Web Audio 合成音效</text></g>
+    </g>
+  </g>
+
+  <g id="roller" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="880" y="40" font-size="18" fill="#b8a88a">加速 → 匀速 → 减速 → 回弹停稳</text>
+    <!-- frame -->
+    <g>
+      <rect x="800" y="56" width="340" height="248" rx="12" fill="#2a211a" stroke="#6b5636" stroke-width="3"/>
+      <rect x="812" y="68" width="316" height="224" rx="8" fill="#1c1611" stroke="#4a3d2c" stroke-width="1.5"/>
+      <!-- plaque -->
+      <rect x="852" y="56" width="236" height="34" rx="6" fill="#d8c49a" stroke="#8a6a3a" stroke-width="2"/>
+      <text x="970" y="80" font-size="20" font-weight="700" fill="#3a2c14" text-anchor="middle">寻找对手</text>
+      <!-- roller window -->
+      <rect x="872" y="104" width="196" height="148" fill="#7a1e1e" stroke="#c9a24a" stroke-width="3"/>
+      <g font-size="19" text-anchor="middle" fill="#e8c9c9">
+        <text x="970" y="128" opacity="0.45">炉石传说高手</text>
+        <text x="970" y="158" opacity="0.7">一毛不拔的朋友</text>
+      </g>
+      <rect x="872" y="168" width="196" height="34" fill="#a82828" stroke="#e8c96a" stroke-width="1.5"/>
+      <text x="970" y="192" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">旗鼓相当的对手</text>
+      <g font-size="19" text-anchor="middle" fill="#e8c9c9">
+        <text x="970" y="226" opacity="0.7">暴雪开发者</text>
+        <text x="970" y="250" opacity="0.45">一只小奶狗</text>
+      </g>
+      <!-- pointers -->
+      <polygon points="872,185 830,158 830,212" fill="#e8c96a" stroke="#8a6a3a" stroke-width="2"/>
+      <polygon points="1068,185 1110,158 1110,212" fill="#e8c96a" stroke="#8a6a3a" stroke-width="2"/>
+      <!-- button -->
+      <rect x="916" y="262" width="108" height="28" rx="14" fill="#3a2f26" stroke="#6b5636" stroke-width="2"/>
+      <text x="970" y="281" font-size="16" fill="#e8c96a" text-anchor="middle">开始匹配</text>
+    </g>
+    <!-- sparks -->
+    <g fill="#e8c96a">
+      <circle cx="830" cy="120" r="2.5"/><circle cx="1112" cy="128" r="2"/>
+      <circle cx="842" cy="286" r="2"/><circle cx="1100" cy="282" r="2.5"/>
+      <circle cx="860" cy="96" r="1.8"/><circle cx="1080" cy="100" r="1.8"/>
+    </g>
+  </g>
+</svg>
